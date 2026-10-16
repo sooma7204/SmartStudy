@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📚 SmartStudy</h1>
+        <p>Plan your studies and track your progress</p>
+
+        <div class="task-form">
+            <h2>Add a New Task</h2>
+
+            <input type="text" id="subject" placeholder="Subject">
+            <input type="text" id="task" placeholder="Task">
+            <input type="date" id="date">
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="tasks">
+            <h2>My Tasks</h2>
+            <div id="taskList"></div>
+        </div>
+
+        <div class="progress">
+            <h2>Study Progress</h2>
+            <p id="progressText">0% completed</p>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
